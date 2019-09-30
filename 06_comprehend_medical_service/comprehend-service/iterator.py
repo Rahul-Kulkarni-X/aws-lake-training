@@ -23,7 +23,7 @@ def handler(event, context):
 
 
         # update the totalItemsToComprehend variable to reflect the number of items already comprehended 
-        if (comprehendedItems < totalItemsToComprehend):     
+        if (comprehendedItems < 3):     
             event['iterator']['continue_iterating'] = True
         else:
             event['iterator']['continue_iterating'] = False
